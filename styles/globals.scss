@@ -1,0 +1,84 @@
+$main: #ED4B64;
+$pink: #FCDBE0;
+$text:#171717;
+$grey:#dbdbdb;
+
+:root,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.form-group {
+  margin-bottom:20px;
+}
+
+.error {
+  color:$text;
+  margin-top:20px;
+  background-color:#fc5603 ;
+  padding:10px;
+  border-radius:50px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.succes {
+  color:$text;
+  margin-top:20px;
+  background-color:#03fc77;
+  padding:10px;
+  border-radius:50px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+input {
+  border-radius:50px;
+  border:2px solid $grey;
+  padding:10px 20px;
+  font-size: 1rem;
+  color: #343434;
+  width:100%;
+}
+
+input[type="submit"] {
+  background-color:white;
+  color: $main;
+  font-weight: 600;
+  border:2px solid $main;
+  cursor: pointer;
+  &:hover, &:active {
+    background-color: $main;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+  }
+  body {
+    color: #171717;
+    background: white;
+  }
+}
